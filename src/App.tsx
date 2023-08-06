@@ -1,7 +1,11 @@
+import Home from "./Home";
+
+import GlobalStyle from "./styles/globalStyle";
 const App = () => {
   return (
     <>
-      <h1>Testando</h1>
+      <GlobalStyle />
+      <Home />
     </>
   );
 };
