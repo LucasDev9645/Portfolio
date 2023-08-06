@@ -4,7 +4,7 @@ export const AboutMeStyled = styled.section`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 6rem;
+  margin-bottom: 10rem;
   h1 {
     font-size: 2.75rem;
     color: var(--color-blue-500);
