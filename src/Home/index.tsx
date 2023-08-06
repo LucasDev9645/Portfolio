@@ -1,7 +1,9 @@
+import AboutMe from "../AboutMe";
 import Button from "../Button";
 import Header from "../Header";
 
 import { DescriptionHome, StyledHome, TitleHome } from "./style";
+
 const Home = () => {
   return (
     <>
@@ -20,6 +22,7 @@ const Home = () => {
         </StyledHome>
       </main>
       <Header />
+      <AboutMe />
     </>
   );
 };
