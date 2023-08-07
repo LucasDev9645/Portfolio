@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle, styled } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
   :root {
@@ -26,10 +26,15 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .container {
-  max-width: 64rem;
+  max-width: 75rem;
   width: 100%;
-  margin: 0 auto;
+  margin: 6rem auto;
 }
 `;
 
+export const Title = styled.h1`
+  font-size: 2.75rem;
+  color: var(--color-blue-500);
+  margin-bottom: 2rem;
+`;
 export default GlobalStyle;

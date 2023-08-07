@@ -1,5 +1,5 @@
 import AboutMe from "../AboutMe";
-import AcademicEducation from "../AcademicEducation";
+import MyServices from "../MyServices";
 import Button from "../Button";
 import Header from "../Header";
 
@@ -24,7 +24,7 @@ const Home = () => {
       </main>
       <Header />
       <AboutMe />
-      <AcademicEducation />
+      <MyServices />
     </>
   );
 };
