@@ -4,6 +4,7 @@ import Button from "../Button";
 import Header from "../Header";
 
 import { DescriptionHome, StyledHome, TitleHome } from "./style";
+import Curriculum from "../Curriculum";
 
 const Home = () => {
   return (
@@ -25,6 +26,7 @@ const Home = () => {
       <Header />
       <AboutMe />
       <MyServices />
+      <Curriculum />
     </>
   );
 };
