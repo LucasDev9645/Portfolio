@@ -5,6 +5,8 @@ import Header from "../Header";
 
 import { DescriptionHome, StyledHome, TitleHome } from "./style";
 import Curriculum from "../Curriculum";
+import WorkTogether from "../WorkTogether";
+import Footer from "../Footer";
 
 const Home = () => {
   return (
@@ -27,6 +29,8 @@ const Home = () => {
       <AboutMe />
       <MyServices />
       <Curriculum />
+      <WorkTogether />
+      <Footer />
     </>
   );
 };
