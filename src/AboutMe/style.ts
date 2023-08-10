@@ -1,13 +1,20 @@
 import { styled } from "styled-components";
 
+import { Title } from "../styles/globalStyle";
+
 export const AboutMeStyled = styled.section`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 23.4rem;
+
+  ${Title} {
+    width: 10ch;
+  }
 
   p {
     max-width: 35rem;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-style: italic;
     line-height: 1.5;
   }
@@ -18,6 +25,7 @@ export const Box = styled.div`
   width: 380px;
   height: 420px;
   background-color: var(--color-gray-900);
+
   border-radius: 30px;
   overflow: hidden;
 
@@ -32,7 +40,7 @@ export const Box = styled.div`
     height: 300%;
     background-color: var(--color-blue-500);
 
-    animation: animate 3s linear infinite;
+    animation: animate 2s linear infinite;
   }
 
   &::after {
@@ -53,5 +61,19 @@ export const Box = styled.div`
     100% {
       transform: rotate(360deg);
     }
+  }
+`;
+
+export const FormationStyled = styled.div`
+  height: 1.2rem;
+
+  h1 {
+    margin-bottom: 1rem;
+    font-family: monospace;
+    color: var(--color-blue-500);
+  }
+
+  img {
+    width: 50rem;
   }
 `;

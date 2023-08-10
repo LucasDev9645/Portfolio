@@ -1,18 +1,20 @@
 import { styled } from "styled-components";
 
+import { Title } from "../styles/globalStyle";
+
 export const WorkTogetherStyle = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  h1 {
-    text-align: center;
+  ${Title} {
+    width: 23ch;
   }
 
   form {
     padding: 1rem;
     max-width: 30rem;
-    height: 30rem;
+    height: 25.4rem;
     color: var(--color-white);
 
     input {
@@ -34,7 +36,7 @@ export const WorkTogetherStyle = styled.section`
       background-color: transparent;
       color: var(--color-white);
       width: 28rem;
-      height: 15rem;
+      height: 13rem;
       padding: 1rem;
       border-radius: 0.5rem;
       font-size: 1.125rem;

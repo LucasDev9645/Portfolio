@@ -1,12 +1,15 @@
 import { styled } from "styled-components";
 
+import { Title } from "../styles/globalStyle";
+
 export const StylesCurriculumContainer = styled.div`
-  h1 {
-    text-align: center;
+  ${Title} {
+    width: 10ch;
   }
 `;
 
 export const StylesCurriculum = styled.div`
+  height: 25.4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,7 +17,7 @@ export const StylesCurriculum = styled.div`
   p {
     font-size: 1.125rem;
     font-style: italic;
-    margin-bottom: 1.3rem;
+    margin-bottom: 1.4rem;
     line-height: 1.4;
     span {
       font-style: normal;

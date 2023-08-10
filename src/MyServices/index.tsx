@@ -1,14 +1,14 @@
 import webDevelopmentImage from "../assets/img/code-icon.svg";
 import webLayoutImage from "../assets/img/diamond-icon.svg";
 import siteDevelopmentImage from "../assets/img/terminal-icon.svg";
-import { Title } from "../styles/globalStyle";
 
+import { Title } from "../styles/globalStyle";
 import { ServicesStyle, ListServices } from "./style";
 
 const MyServices = () => {
   return (
     <ServicesStyle className="container">
-      <Title>Serviços</Title>
+      <Title>Serviços.</Title>
       <ListServices>
         <div>
           <img src={webDevelopmentImage} alt="" />

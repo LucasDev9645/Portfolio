@@ -1,12 +1,20 @@
 import { styled } from "styled-components";
 
+import { Title } from "../styles/globalStyle";
+
 export const ServicesStyle = styled.section`
   text-align: center;
+
+  ${Title} {
+    width: 9ch;
+  }
 `;
 
 export const ListServices = styled.section`
+  margin-top: 2.4rem;
   display: flex;
   justify-content: space-between;
+  height: 25rem;
 
   div {
     display: flex;
@@ -15,7 +23,6 @@ export const ListServices = styled.section`
     align-items: center;
     background-color: var(--color-gray-700);
     width: 22rem;
-    height: 25rem;
     border-radius: 1rem;
     border: 2px solid var(--color-blue-500);
 

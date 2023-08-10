@@ -1,12 +1,13 @@
 import imageCurriculum from "../assets/img/imagem.svg";
 import imageSave from "../assets/img/save.svg";
+
 import { Title } from "../styles/globalStyle";
 import { StylesCurriculum, StylesCurriculumContainer } from "./style";
 
 const Curriculum = () => {
   return (
     <StylesCurriculumContainer className="container">
-      <Title>Currículo</Title>
+      <Title>Currículo.</Title>
       <StylesCurriculum>
         <img src={imageCurriculum} alt="" />
         <div>

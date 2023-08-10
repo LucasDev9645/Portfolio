@@ -1,28 +1,33 @@
+import { Link } from "react-router-dom";
+
 import logo from "../assets/img/logo1.svg";
+
 import { HeaderStyle } from "./styled";
 
 const Header = () => {
   return (
     <HeaderStyle>
       <div>
-        <img src={logo} alt="" />
+        <Link to="/">
+          <img src={logo} alt="logo do lucas freitas" />
+        </Link>
       </div>
       <nav>
         <ul>
           <li>
-            <a href="">Sobre Mim</a>
+            <Link to="/sobre-mim">Sobre Mim</Link>
           </li>
           <li>
-            <a href="">Serviços</a>
+            <Link to="/servicos">Serviços</Link>
           </li>
           <li>
-            <a href="">Portfólio</a>
+            <Link to="/projetos">Portfólio</Link>
           </li>
           <li>
-            <a href="">Currículo</a>
+            <Link to="/curriculo">Currículo</Link>
           </li>
           <li>
-            <a href="">Contato</a>
+            <Link to="/contato">Contato</Link>
           </li>
         </ul>
       </nav>
