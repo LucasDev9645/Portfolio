@@ -26,11 +26,6 @@ export const PortfolioContainer = styled.section`
         background: #373737;
         color: var(--color-gray-300);
 
-        img {
-          max-width: 100%;
-          pointer-events: none;
-        }
-
         h3 {
           margin-top: 1rem;
           text-align: center;
@@ -39,8 +34,9 @@ export const PortfolioContainer = styled.section`
 
         p {
           margin-top: 0.5rem;
-          font-size: 0.85rem;
+          font-size: 1rem;
           font-style: italic;
+          height: 5.1rem;
         }
       }
     }
@@ -48,10 +44,11 @@ export const PortfolioContainer = styled.section`
 `;
 
 export const ContainerButton = styled.div`
+  bottom: 0.5rem;
   display: flex;
+  margin-top: 4rem;
   justify-content: space-between;
   align-items: center;
-  margin-top: 4rem;
 
   button {
     cursor: pointer;
@@ -59,8 +56,8 @@ export const ContainerButton = styled.div`
     background-color: var(--color-blue-500);
     box-shadow: 0 0 5px var(--color-blue-500), 0 0 25px var(--color-blue-500);
     border: none;
-    width: 7rem;
-    height: 1.6rem;
+    width: 8rem;
+    height: 1.8rem;
     font-weight: 700;
     font-size: 0.8rem;
     display: flex;
@@ -72,4 +69,9 @@ export const ContainerButton = styled.div`
       width: 1.125rem;
     }
   }
+`;
+
+export const ProjectImage = styled.img`
+  width: 100%;
+  height: 14rem;
 `;
