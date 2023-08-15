@@ -66,7 +66,13 @@ const Curriculum = () => {
               <b>Inglês(tecnico)</b>
             </span>
           </p>
-          <button>
+          <button
+            onClick={() =>
+              window.open(
+                "https://drive.google.com/u/2/uc?id=1F5y8ODPsuj2zkyBEGHl_HjGoLY7y4fmf&export=download"
+              )
+            }
+          >
             <img src={imageSave} alt="" />
             Baixe meu currículo completo
           </button>

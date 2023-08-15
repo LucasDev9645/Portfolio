@@ -69,7 +69,6 @@ export const FormationStyled = styled.div`
 
   h1 {
     margin-bottom: 1rem;
-    font-family: monospace;
     color: var(--color-blue-500);
   }
 

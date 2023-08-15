@@ -26,6 +26,10 @@ const GlobalStyle = createGlobalStyle`
     color:var(--color-gray-300);
   }
 
+  h1 , h2 , h3 {
+    font-family: 'Poppins', sans-serif; 
+  }
+
   .container {
   max-width: 75rem;
   width: 100%;
