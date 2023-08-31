@@ -7,7 +7,7 @@ import MyServices from "./MyServices";
 import Portfolio from "./Portfolio";
 import Curriculum from "./Curriculum";
 import WorkTogether from "./WorkTogether";
-import Footer from "./Footer";
+// import Footer from "./Footer";
 
 import GlobalStyle from "./styles/globalStyle";
 
@@ -24,7 +24,7 @@ const App = () => {
         <Route path="curriculo" element={<Curriculum />} />
         <Route path="contato" element={<WorkTogether />} />
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </BrowserRouter>
   );
 };

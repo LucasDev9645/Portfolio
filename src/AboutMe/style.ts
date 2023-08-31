@@ -6,7 +6,6 @@ export const AboutMeStyled = styled.section`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 23.4rem;
 
   ${Title} {
     width: 10ch;
@@ -18,15 +17,28 @@ export const AboutMeStyled = styled.section`
     font-style: italic;
     line-height: 1.5;
   }
+
+  @media (max-width: 920px) {
+    flex-direction: column-reverse;
+
+    p {
+      font-size: 1.3rem;
+    }
+  }
+
+  @media (max-width: 560px) {
+    p {
+      font-size: 1.1rem;
+    }
+  }
 `;
 
 export const Box = styled.div`
   position: relative;
-  width: 380px;
-  height: 420px;
+  width: 23.75rem;
+  height: 26.25rem;
   background-color: var(--color-gray-900);
-
-  border-radius: 30px;
+  border-radius: 1.875rem;
   overflow: hidden;
 
   display: flex;
@@ -36,7 +48,7 @@ export const Box = styled.div`
   &::before {
     content: "";
     position: absolute;
-    width: 200px;
+    width: 12.5rem;
     height: 300%;
     background-color: var(--color-blue-500);
 
@@ -61,6 +73,18 @@ export const Box = styled.div`
     100% {
       transform: rotate(360deg);
     }
+  }
+
+  @media (max-width: 920px) {
+    margin-bottom: 1.5rem;
+    width: 21.25rem;
+    height: 23.75rem;
+  }
+
+  @media (max-width: 560px) {
+    margin-bottom: 1.3rem;
+    width: 20rem;
+    height: 22.5rem;
   }
 `;
 

@@ -12,4 +12,8 @@ export const TagContainer = styled.div<Props>`
     props.size === "big" ? "0.5rem 1rem" : " 0.25rem 0.375rem"};
   border-radius: 0.5rem;
   display: inline-block;
+
+  @media (max-width: 560px) {
+    font-size: ${(props) => (props.size === "big" ? "1rem" : "0.6rem")};
+  }
 `;

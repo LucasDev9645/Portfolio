@@ -6,9 +6,8 @@ export const WorkTogetherStyle = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-
   ${Title} {
-    width: 23ch;
+    width: 17ch;
   }
 
   div {
@@ -25,7 +24,7 @@ export const WorkTogetherStyle = styled.section`
     form {
       padding: 1rem;
       max-width: 30rem;
-      height: 25.4rem;
+      height: 25rem;
       color: var(--color-white);
 
       input {
@@ -53,6 +52,25 @@ export const WorkTogetherStyle = styled.section`
         font-size: 1.125rem;
         display: block;
         margin-bottom: 2.5rem;
+      }
+    }
+
+    @media (max-width: 560px) {
+      form {
+        input {
+          padding: 0.8rem;
+          font-size: 1rem;
+          margin-bottom: 1.5rem;
+          width: 20rem;
+          height: 2.5rem;
+        }
+
+        textarea {
+          width: 20rem;
+          padding: 0.8rem;
+          font-size: 1rem;
+          margin-bottom: 2rem;
+        }
       }
     }
   }

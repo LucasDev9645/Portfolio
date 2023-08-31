@@ -22,8 +22,14 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-     background-color:var( --color-gray-900);    
+    background-color:var( --color-gray-900);    
     color:var(--color-gray-300);
+    padding:0 1rem;
+    overflow-x: hidden;
+   
+    @media (max-width:560px){
+      padding:0 0.5rem;
+    }
   }
 
   h1 , h2 , h3 {
@@ -33,7 +39,11 @@ const GlobalStyle = createGlobalStyle`
   .container {
   max-width: 75rem;
   width: 100%;
-  margin: 6rem auto;
+  margin: 6rem auto 2rem auto;
+
+  @media (max-width:560px) {
+    margin: 3rem auto 2rem auto;
+  }
 }
 `;
 
@@ -57,6 +67,21 @@ export const Title = styled.h1`
     50% {
       border-color: transparent;
     }
+  }
+
+  @media (max-width: 1200px) {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  @media (max-width: 920px) {
+    font-size: 2.3rem;
+    margin-bottom: 1.3rem;
+  }
+
+  @media (max-width: 560px) {
+    font-size: 1.9rem;
+    margin-bottom: 1.2rem;
   }
 `;
 

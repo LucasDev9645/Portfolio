@@ -44,14 +44,8 @@ const WorkTogether = () => {
 
   return (
     <WorkTogetherStyle className="container">
-      <Title>Vamos Trabalhar Juntos?</Title>
+      <Title>Entre em Contato.</Title>
       <div>
-        <h1>
-          Se você gostou do meu trabalho e deseja transformar sua ideia em
-          realidade ou contar comigo em sua equipe, não hesite em entrar em
-          contato! Estou ansioso para colaborar e juntos fazer grandes coisas
-          acontecerem !
-        </h1>
         <form onSubmit={sendEmail}>
           <input
             type="text"

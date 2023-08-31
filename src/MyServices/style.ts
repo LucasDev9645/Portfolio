@@ -12,9 +12,9 @@ export const ServicesStyle = styled.section`
 
 export const ListServices = styled.section`
   margin-top: 2.4rem;
-  display: flex;
-  justify-content: space-between;
-  height: 25rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
 
   div {
     display: flex;
@@ -25,6 +25,7 @@ export const ListServices = styled.section`
     width: 22rem;
     border-radius: 1rem;
     border: 2px solid var(--color-blue-500);
+    height: 24.6rem;
 
     img {
       max-width: 5.625rem;
@@ -38,6 +39,53 @@ export const ListServices = styled.section`
       max-width: 17rem;
       font-size: 1.125rem;
       font-style: italic;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    div {
+      width: 18rem;
+
+      h2 {
+        font-size: 1.4rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  @media (max-width: 920px) {
+    grid-template-columns: 1fr;
+
+    div {
+      width: 22rem;
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 1.125rem;
+      }
+    }
+  }
+
+  @media (max-width: 560px) {
+    div {
+      width: 18rem;
+
+      h2 {
+        font-size: 1.4rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
     }
   }
 `;

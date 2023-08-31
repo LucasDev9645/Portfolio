@@ -15,13 +15,13 @@ export const PortfolioContainer = styled.section`
   div {
     ul {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 2rem;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
 
       li {
         padding: 0.6rem;
         border-radius: 0.7rem;
-        width: 23.75rem;
+        width: 22.75rem;
         height: 31.25rem;
         background: #373737;
         color: var(--color-gray-300);
@@ -29,7 +29,7 @@ export const PortfolioContainer = styled.section`
         h3 {
           margin-top: 1rem;
           text-align: center;
-          font-size: 20px;
+          font-size: 1.25rem;
         }
 
         p {
@@ -37,6 +37,55 @@ export const PortfolioContainer = styled.section`
           font-size: 1rem;
           font-style: italic;
           height: 5.1rem;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1200px) {
+    div {
+      ul {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        gap: 3rem;
+
+        li {
+          width: 24.75rem;
+
+          p {
+            font-size: 1.125rem;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 920px) {
+    div {
+      ul {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+    }
+  }
+
+  @media (max-width: 560px) {
+    div {
+      ul {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+
+        li {
+          width: 19.6rem;
+
+          h3 {
+            margin-top: 0.8rem;
+            font-size: 1.125rem;
+          }
+
+          p {
+            font-size: 0.8rem;
+          }
         }
       }
     }
