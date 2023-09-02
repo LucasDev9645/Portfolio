@@ -34,7 +34,7 @@ export const WorkTogetherStyle = styled.section`
         padding: 1rem;
         font-size: 1.125rem;
         border-radius: 0.5rem;
-        margin-bottom: 2rem;
+        margin-top: 2rem;
         width: 28rem;
         height: 3rem;
         display: block;
@@ -51,8 +51,15 @@ export const WorkTogetherStyle = styled.section`
         border-radius: 0.5rem;
         font-size: 1.125rem;
         display: block;
-        margin-bottom: 2.5rem;
+        margin: 2rem 0 1.5rem 0;
       }
+    }
+
+    .styleError {
+      font-size: 0.9rem;
+      margin: 0s;
+      color: var(--color-red-500);
+      margin: 0.3rem 0 0 0.2rem;
     }
 
     @media (max-width: 560px) {
@@ -60,7 +67,7 @@ export const WorkTogetherStyle = styled.section`
         input {
           padding: 0.8rem;
           font-size: 1rem;
-          margin-bottom: 1.5rem;
+          margin-top: 1.5rem;
           width: 20rem;
           height: 2.5rem;
         }
@@ -69,9 +76,31 @@ export const WorkTogetherStyle = styled.section`
           width: 20rem;
           padding: 0.8rem;
           font-size: 1rem;
-          margin-bottom: 2rem;
         }
       }
+    }
+  }
+`;
+
+export const MyContact = styled.div`
+  margin-top: 8.5rem;
+
+  a {
+    padding: 0 2rem;
+    &:hover {
+      zoom: 1.3;
+    }
+  }
+
+  @media (max-width: 560px) {
+    margin-top: 7rem;
+
+    a {
+      padding: 0 1rem;
+    }
+
+    img {
+      width: 2.5rem;
     }
   }
 `;

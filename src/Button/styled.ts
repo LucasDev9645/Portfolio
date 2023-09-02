@@ -10,7 +10,10 @@ export const ButtonStyled = styled.button`
   border: none;
   border-radius: 0.5rem;
   background-color: var(--color-blue-500);
-  box-shadow: 0 0 5px var(--color-blue-500), 0 0 25px var(--color-blue-500);
+
+  &:hover {
+    box-shadow: 0 0 5px var(--color-blue-500), 0 0 25px var(--color-blue-500);
+  }
 
   @media (max-width: 920px) {
     font-size: 0.9rem;

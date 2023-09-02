@@ -1,7 +1,8 @@
+import TagSkills from "../TagSkills";
 import photo from "../assets/img/foto-perfil.png";
-import imageSkills from "../assets/img/icones.svg";
 
 import { Title } from "../styles/globalStyle";
+import { listSkills } from "../util/skills";
 import { AboutMeStyled, Box, FormationStyled } from "./style";
 
 const AboutMe = () => {
@@ -24,7 +25,9 @@ const AboutMe = () => {
       <FormationStyled className="container">
         <div>
           <h1>Skills.</h1>
-          <img src={imageSkills} alt="" />
+          {listSkills.map((skill) => (
+            <TagSkills key={skill}>{skill}</TagSkills>
+          ))}
         </div>
       </FormationStyled>
     </>

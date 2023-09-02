@@ -10,7 +10,8 @@ const GlobalStyle = createGlobalStyle`
   --color-gray-900 :#212226;
   
   --color-blue-500:#15CDCB;
-}
+  --color-red-500:#FE3B3B;
+  }
    
   * {
   margin:0; 

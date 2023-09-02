@@ -11,7 +11,7 @@ const MyServices = () => {
       <Title>Serviços.</Title>
       <ListServices>
         <div>
-          <img src={webDevelopmentImage} alt="" />
+          <img src={webDevelopmentImage} alt="ícone desenvolvimento de sites" />
           <h2>
             Desevolvimento de
             <br /> Sites
@@ -22,7 +22,10 @@ const MyServices = () => {
           </p>
         </div>
         <div>
-          <img src={siteDevelopmentImage} alt="" />
+          <img
+            src={siteDevelopmentImage}
+            alt="ícone desenvolvimento de aplicações web"
+          />
           <h2>
             Desenvolvimento de
             <br /> Aplicações Web
@@ -33,7 +36,7 @@ const MyServices = () => {
           </p>
         </div>
         <div>
-          <img src={webLayoutImage} alt="" />
+          <img src={webLayoutImage} alt="ícone criação de layouts" />
           <h2>
             Criação de
             <br /> Layouts

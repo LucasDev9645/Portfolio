@@ -17,11 +17,10 @@ export const PortfolioContainer = styled.section`
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 1.5rem;
-
       li {
         padding: 0.6rem;
         border-radius: 0.7rem;
-        width: 22.75rem;
+        width: 24.6rem;
         height: 31.25rem;
         background: #373737;
         color: var(--color-gray-300);

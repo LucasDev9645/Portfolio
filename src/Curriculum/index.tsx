@@ -9,7 +9,7 @@ const Curriculum = () => {
     <StylesCurriculumContainer className="container">
       <Title>Currículo.</Title>
       <StylesCurriculum>
-        <img src={imageCurriculum} alt="" />
+        <img src={imageCurriculum} alt="imagem de um currículo" />
         <div>
           <p>
             Nome
@@ -73,7 +73,7 @@ const Curriculum = () => {
               )
             }
           >
-            <img src={imageSave} alt="" />
+            <img src={imageSave} alt="ícone currículo" />
             Baixe meu currículo completo
           </button>
         </div>

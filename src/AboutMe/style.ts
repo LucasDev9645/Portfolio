@@ -92,7 +92,7 @@ export const FormationStyled = styled.div`
   height: 1.2rem;
 
   h1 {
-    margin-bottom: 1rem;
+    margin-bottom: 0.7rem;
     color: var(--color-blue-500);
   }
 
