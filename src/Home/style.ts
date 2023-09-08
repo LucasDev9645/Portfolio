@@ -60,7 +60,7 @@ export const DescriptionHome = styled.p`
   }
 
   @media (max-width: 560px) {
-    max-width: 40rem;
+    max-width: 26rem;
     font-size: 1.1rem;
     margin-bottom: 1.4rem;
   }

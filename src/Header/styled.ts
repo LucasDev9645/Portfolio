@@ -88,8 +88,8 @@ export const HeaderStyle = styled.header`
       position: absolute;
       top: 11vh;
       right: 0;
-      width: 100vw;
-      height: 89vh;
+      width: 35vw;
+      height: 50vh;
       background: var(--color-gray-900);
       opacity: 0.97;
       transform: translateX(100%);
@@ -98,7 +98,6 @@ export const HeaderStyle = styled.header`
       ul {
         flex-direction: column;
         align-items: center;
-
         li {
           opacity: 0;
           margin-bottom: 2rem;
@@ -113,7 +112,6 @@ export const HeaderStyle = styled.header`
 
   @media (max-width: 560px) {
     margin-top: 1rem;
-
     img {
       display: block;
       text-align: center;
