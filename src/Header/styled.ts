@@ -48,7 +48,8 @@ export const HeaderStyle = styled.header`
       }
     }
     .active {
-      transform: translateX(0);
+      /* transform: translateX(0); */
+      display: block;
       z-index: 2;
 
       li {
@@ -88,12 +89,13 @@ export const HeaderStyle = styled.header`
       position: absolute;
       top: 11vh;
       right: 0;
-      width: 35vw;
-      height: 50vh;
+      width: 100vw;
+      height: 89vh;
       background: var(--color-gray-900);
       opacity: 0.97;
-      transform: translateX(100%);
+      /* transform: translateY(100%); */
       transition: transform 0.3s ease-in;
+      display: none;
 
       ul {
         flex-direction: column;
