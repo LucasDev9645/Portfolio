@@ -48,7 +48,6 @@ export const HeaderStyle = styled.header`
       }
     }
     .active {
-      /* transform: translateX(0); */
       display: block;
       z-index: 2;
 
@@ -93,7 +92,6 @@ export const HeaderStyle = styled.header`
       height: 89vh;
       background: var(--color-gray-900);
       opacity: 0.97;
-      /* transform: translateY(100%); */
       transition: transform 0.3s ease-in;
       display: none;
 

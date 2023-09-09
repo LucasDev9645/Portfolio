@@ -83,6 +83,7 @@ export const StylesCurriculum = styled.div`
       width: 26.875rem;
       height: 5rem;
       font-size: 1.125rem;
+      margin-bottom: 1.5rem;
     }
   }
 
