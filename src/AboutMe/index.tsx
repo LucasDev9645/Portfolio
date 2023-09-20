@@ -24,7 +24,7 @@ const AboutMe = () => {
       </AboutMeStyled>
       <FormationStyled className="container">
         <div>
-          <h1>Skills.</h1>
+          <h1>Habilidades.</h1>
           {listSkills.map((skill) => (
             <TagSkills key={skill}>{skill}</TagSkills>
           ))}

@@ -69,7 +69,7 @@ const Curriculum = () => {
           <button
             onClick={() =>
               window.open(
-                "https://drive.google.com/u/2/uc?id=1F5y8ODPsuj2zkyBEGHl_HjGoLY7y4fmf&export=download"
+                "https://drive.google.com/file/d/16-98JN2A7cWJDvCVHx6JlBKRSbsSGhdO/view?usp=sharing"
               )
             }
           >

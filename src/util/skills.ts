@@ -8,6 +8,7 @@ export const listSkills = [
   "javascript",
   "typescript",
   "node",
+  "docker",
   "react",
   "vue.js",
   "jquery",
