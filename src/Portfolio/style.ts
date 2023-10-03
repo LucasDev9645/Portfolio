@@ -92,7 +92,6 @@ export const PortfolioContainer = styled.section`
 `;
 
 export const ContainerButton = styled.div`
-  bottom: 0.5rem;
   display: flex;
   margin-top: 4rem;
   justify-content: space-between;

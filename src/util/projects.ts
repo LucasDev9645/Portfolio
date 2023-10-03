@@ -10,14 +10,7 @@ export const projects = [
   {
     id: 1,
     image: efoodImage,
-    skills: [
-      "React",
-      "Redux",
-      "Typescript",
-      "Styled-Components",
-      "API",
-      "Formik",
-    ],
+    skills: ["React", "Redux", "Typescript", "Styled-Components", "API"],
     title: "Efood",
     description:
       " A aplicação propõe uma cuidadosa seleção de estabelecimentos gastronômicos, apresentando seus requintados cardápios. Nesse espaço, é possível agregar itens ao carrinho e realizar o pagamento de maneira conveniente, por meio de transações eletrônicas utilizando cartão.",
