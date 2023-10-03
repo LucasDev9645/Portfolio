@@ -5,7 +5,7 @@ import { Props } from "./index";
 export const TagContainer = styled.div<Props>`
   background-color: var(--color-blue-500);
   color: var(--color-black);
-  font-size: ${(props) => (props.size === "big" ? "1rem" : "0.7rem")};
+  font-size: ${(props) => (props.size === "big" ? "1rem" : "0.580rem")};
   text-transform: uppercase;
   font-weight: 700;
   padding: ${(props) =>

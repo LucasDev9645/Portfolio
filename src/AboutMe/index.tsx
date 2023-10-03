@@ -12,10 +12,11 @@ const AboutMe = () => {
         <div>
           <Title>Sobre Mim.</Title>
           <p>
-            Sou Lucas Freitas um jovem sonhador em busca de uma oportunidade,
-            estou estudando constantemente desenvolvimento web a 1 ano. e também
-            faço graduação em engenharia de software buscando me aprofundar mais
-            em conhecimentos para agregar em minha carreira profissional.
+            Apresento-me como Lucas Freitas, um jovem sonhador, dedicado ao
+            aprimoramento constante no desenvolvimento web ao longo de um ano.
+            Atualmente, persigo minha graduação em engenharia de software,
+            visando aprofundar meus conhecimentos e enriquecer minha trajetória
+            profissional.
           </p>
         </div>
         <Box>
