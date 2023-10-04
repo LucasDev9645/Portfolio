@@ -26,7 +26,7 @@ const GlobalStyle = createGlobalStyle`
     background-color:var( --color-gray-900);    
     color:var(--color-gray-300);
     padding:0 1rem;
-    overflow-x:hidden;
+    overflow-x:hidden; 
    
     @media (max-width:560px){
       padding:0 0.5rem;

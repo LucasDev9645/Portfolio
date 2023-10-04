@@ -7,10 +7,18 @@ import { HeaderStyle } from "./styled";
 
 const Header = () => {
   const [menuMobile, setMenuMobile] = useState(false);
+  const [menuClicado, setMenuClicado] = useState(false);
 
   useEffect(() => {
-    document.body.style.overflowY = menuMobile ? "hidden" : "auto";
-  }, [menuMobile]);
+    if (window.innerWidth <= 920) {
+      document.body.style.overflowY = menuMobile ? "hidden" : "auto";
+    }
+  }, [menuMobile, menuClicado]);
+
+  const toggleMenu = () => {
+    setMenuMobile((prevState) => !prevState);
+    setMenuClicado(true);
+  };
 
   return (
     <HeaderStyle>
@@ -19,7 +27,12 @@ const Header = () => {
           <img src={logo} alt="logo do lucas freitas" />
         </Link>
       </div>
-      <div onClick={() => setMenuMobile(!menuMobile)} className="mobileMenu">
+      <div
+        onClick={() => {
+          setMenuMobile(!menuMobile), toggleMenu;
+        }}
+        className="mobileMenu"
+      >
         <div className="hidden">
           <div className="line"></div>
           <div className="line"></div>
