@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 
-import { Title } from "../styles/globalStyle";
+import { Title } from "../../styles/globalStyle";
 
 export const StyledHome = styled.section`
   margin-top: 12.2rem;

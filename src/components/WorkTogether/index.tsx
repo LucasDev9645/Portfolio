@@ -2,14 +2,14 @@ import { FormEvent, useState } from "react";
 import EmailJSResponseStatus from "@emailjs/browser";
 
 import Button from "../Button";
-import { emailRegex } from "../util/validate";
+import { emailRegex } from "../../util/validate";
 
-import WhatsappImage from "../assets/img/icons8-whatsapp.svg";
-import linkedinImage from "../assets/img/icons8-linkedin.svg";
-import gitHubImage from "../assets/img/icons8-github.svg";
+import WhatsappImage from "../../assets/img/icons8-whatsapp.svg";
+import linkedinImage from "../../assets/img/icons8-linkedin.svg";
+import gitHubImage from "../../assets/img/icons8-github.svg";
 
-import { Title } from "../styles/globalStyle";
-import { MyContact, WorkTogetherStyle } from "./style";
+import { Title } from "../../styles/globalStyle";
+import * as S from "./style";
 
 type Props = {
   from_name: string;
@@ -57,7 +57,7 @@ const WorkTogether = () => {
   };
 
   return (
-    <WorkTogetherStyle className="container">
+    <S.WorkTogetherStyle className="container">
       <Title>Entre em Contato.</Title>
       <div>
         <form onSubmit={sendEmail}>
@@ -87,7 +87,7 @@ const WorkTogether = () => {
         </form>
       </div>
 
-      <MyContact>
+      <S.MyContact>
         <a href="https://wa.me/5531973041723">
           <img src={WhatsappImage} alt="ícone contato whatsapp" />
         </a>
@@ -97,8 +97,8 @@ const WorkTogether = () => {
         <a href="https://github.com/LucasDev9645">
           <img src={gitHubImage} alt="ícone do github" />
         </a>
-      </MyContact>
-    </WorkTogetherStyle>
+      </S.MyContact>
+    </S.WorkTogetherStyle>
   );
 };
 

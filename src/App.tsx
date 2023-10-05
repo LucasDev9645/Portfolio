@@ -1,12 +1,7 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 
-import Header from "./Header";
-import Home from "./Home";
-import AboutMe from "./AboutMe";
-import MyServices from "./MyServices";
-import Portfolio from "./Portfolio";
-import Curriculum from "./Curriculum";
-import WorkTogether from "./WorkTogether";
+import Header from "./components/Header";
+import ApplicationRoutes from "./routes";
 
 import GlobalStyle from "./styles/globalStyle";
 
@@ -15,14 +10,7 @@ const App = () => {
     <BrowserRouter>
       <GlobalStyle />
       <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="sobre-mim" element={<AboutMe />} />
-        <Route path="servicos" element={<MyServices />} />
-        <Route path="projetos" element={<Portfolio />} />
-        <Route path="curriculo" element={<Curriculum />} />
-        <Route path="contato" element={<WorkTogether />} />
-      </Routes>
+      <ApplicationRoutes />
     </BrowserRouter>
   );
 };

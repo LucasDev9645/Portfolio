@@ -3,10 +3,10 @@ export type Props = {
   disabled?: boolean;
 };
 
-import { ButtonStyled } from "./styled";
+import * as S from "./styled";
 
 const Button = ({ name, disabled }: Props) => {
-  return <ButtonStyled disabled={disabled}>{name}</ButtonStyled>;
+  return <S.ButtonStyled disabled={disabled}>{name}</S.ButtonStyled>;
 };
 
 export default Button;

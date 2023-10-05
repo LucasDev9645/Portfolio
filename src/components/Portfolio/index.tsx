@@ -1,28 +1,28 @@
-import { projects } from "../util/projects";
+import { projects } from "../../util/projects";
 import Tag from "../Tag";
 
-import imageSite from "../assets/img/pagina-da-internet 1.png";
-import imageGit from "../assets/img/icons8-github-24 1.png";
+import imageSite from "../../assets/img/pagina-da-internet 1.png";
+import imageGit from "../../assets/img/icons8-github-24 1.png";
 
-import { Title } from "../styles/globalStyle";
-import { ContainerButton, PortfolioContainer, ProjectImage } from "./style";
+import { Title } from "../../styles/globalStyle";
+import * as S from "./style";
 
 const Portfolio = () => {
   return (
-    <PortfolioContainer className="container">
+    <S.PortfolioContainer className="container">
       <Title>Meus Projetos.</Title>
       <div>
         <ul>
           {projects.map((item) => (
             <li key={item.id}>
-              <ProjectImage src={item.image} alt={item.title} />
+              <S.ProjectImage src={item.image} alt={item.title} />
 
               {item.skills.map((skill) => (
                 <Tag key={skill}>{skill}</Tag>
               ))}
               <h3>{item.title}</h3>
               <p>{item.description}</p>
-              <ContainerButton>
+              <S.ContainerButton>
                 <button onClick={() => window.open(item.site, "_blank")}>
                   <img src={imageSite} alt="" />
                   Visitar Site
@@ -31,12 +31,12 @@ const Portfolio = () => {
                   <img src={imageGit} alt="" />
                   Ver Código
                 </button>
-              </ContainerButton>
+              </S.ContainerButton>
             </li>
           ))}
         </ul>
       </div>
-    </PortfolioContainer>
+    </S.PortfolioContainer>
   );
 };
 

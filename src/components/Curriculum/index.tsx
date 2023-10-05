@@ -1,14 +1,14 @@
-import imageCurriculum from "../assets/img/imagem.svg";
-import imageSave from "../assets/img/save.svg";
+import imageCurriculum from "../../assets/img/imagem.svg";
+import imageSave from "../../assets/img/save.svg";
 
-import { Title } from "../styles/globalStyle";
-import { StylesCurriculum, StylesCurriculumContainer } from "./style";
+import { Title } from "../../styles/globalStyle";
+import * as S from "./style";
 
 const Curriculum = () => {
   return (
-    <StylesCurriculumContainer className="container">
+    <S.StylesCurriculumContainer className="container">
       <Title>Currículo.</Title>
-      <StylesCurriculum>
+      <S.StylesCurriculum>
         <img src={imageCurriculum} alt="imagem de um currículo" />
         <div>
           <p>
@@ -17,7 +17,6 @@ const Curriculum = () => {
               <b>Lucas freitas</b>
             </span>
           </p>
-
           <p>
             Idade
             <span>
@@ -77,8 +76,8 @@ const Curriculum = () => {
             Baixe meu currículo completo
           </button>
         </div>
-      </StylesCurriculum>
-    </StylesCurriculumContainer>
+      </S.StylesCurriculum>
+    </S.StylesCurriculumContainer>
   );
 };
 

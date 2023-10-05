@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 
-import { Title } from "../styles/globalStyle";
+import { Title } from "../../styles/globalStyle";
 
 export const ServicesStyle = styled.section`
   text-align: center;

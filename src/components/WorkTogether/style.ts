@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 
-import { Title } from "../styles/globalStyle";
+import { Title } from "../../styles/globalStyle";
 
 export const WorkTogetherStyle = styled.section`
   display: flex;

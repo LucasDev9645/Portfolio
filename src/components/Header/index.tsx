@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-import logo from "../assets/img/logo1.svg";
+import logo from "../../assets/img/logo1.svg";
 
-import { HeaderStyle } from "./styled";
+import * as S from "./styled";
 
 const Header = () => {
   const [menuMobile, setMenuMobile] = useState(false);
@@ -21,7 +21,7 @@ const Header = () => {
   };
 
   return (
-    <HeaderStyle>
+    <S.HeaderStyle>
       <div>
         <Link to="/">
           <img src={logo} alt="logo do lucas freitas" />
@@ -58,7 +58,7 @@ const Header = () => {
           </ul>
         </nav>
       </div>
-    </HeaderStyle>
+    </S.HeaderStyle>
   );
 };
 

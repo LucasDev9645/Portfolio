@@ -1,14 +1,15 @@
 import TagSkills from "../TagSkills";
-import photo from "../assets/img/foto-perfil.png";
+import { listSkills } from "../../util/skills";
 
-import { Title } from "../styles/globalStyle";
-import { listSkills } from "../util/skills";
-import { AboutMeStyled, Box, FormationStyled } from "./style";
+import photo from "../../assets/img/foto-perfil.png";
+
+import { Title } from "../../styles/globalStyle";
+import * as S from "./style";
 
 const AboutMe = () => {
   return (
     <>
-      <AboutMeStyled className="container">
+      <S.AboutMeStyled className="container">
         <div>
           <Title>Sobre Mim.</Title>
           <p>
@@ -19,18 +20,18 @@ const AboutMe = () => {
             profissional.
           </p>
         </div>
-        <Box>
+        <S.Box>
           <img src={photo} alt="foto lucas freitas" />
-        </Box>
-      </AboutMeStyled>
-      <FormationStyled className="container">
+        </S.Box>
+      </S.AboutMeStyled>
+      <S.FormationStyled className="container">
         <div>
           <h1>Habilidades.</h1>
           {listSkills.map((skill) => (
             <TagSkills key={skill}>{skill}</TagSkills>
           ))}
         </div>
-      </FormationStyled>
+      </S.FormationStyled>
     </>
   );
 };

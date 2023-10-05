@@ -1,11 +1,11 @@
-import { TagSkillsStyle } from "./styled";
+import * as S from "./styled";
 
 type Props = {
   children: string;
 };
 
 const Tag = ({ children }: Props) => {
-  return <TagSkillsStyle>{children}</TagSkillsStyle>;
+  return <S.TagSkillsStyle>{children}</S.TagSkillsStyle>;
 };
 
 export default Tag;

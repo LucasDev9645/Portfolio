@@ -1,15 +1,15 @@
-import webDevelopmentImage from "../assets/img/code-icon.svg";
-import webLayoutImage from "../assets/img/diamond-icon.svg";
-import siteDevelopmentImage from "../assets/img/terminal-icon.svg";
+import webDevelopmentImage from "../../assets/img/code-icon.svg";
+import webLayoutImage from "../../assets/img/diamond-icon.svg";
+import siteDevelopmentImage from "../../assets/img/terminal-icon.svg";
 
-import { Title } from "../styles/globalStyle";
-import { ServicesStyle, ListServices } from "./style";
+import { Title } from "../../styles/globalStyle";
+import * as S from "./style";
 
 const MyServices = () => {
   return (
-    <ServicesStyle className="container">
+    <S.ServicesStyle className="container">
       <Title>Serviços.</Title>
-      <ListServices>
+      <S.ListServices>
         <div>
           <img src={webDevelopmentImage} alt="ícone desenvolvimento de sites" />
           <h2>
@@ -46,8 +46,8 @@ const MyServices = () => {
             ideia antes de por em prática.
           </p>
         </div>
-      </ListServices>
-    </ServicesStyle>
+      </S.ListServices>
+    </S.ServicesStyle>
   );
 };
 

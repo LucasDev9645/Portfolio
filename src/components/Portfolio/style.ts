@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 
-import { Title } from "../styles/globalStyle";
+import { Title } from "../../styles/globalStyle";
 import { TagContainer } from "../Tag/style";
 
 export const PortfolioContainer = styled.section`
